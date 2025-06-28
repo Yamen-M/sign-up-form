@@ -93,8 +93,7 @@ body {
 
 
 .formParag{
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
     font-family: sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -109,7 +108,7 @@ body {
     margin-top: 0;
 }
 
-.FormDiv{
+.formDiv{
     padding: 0;
     margin: 0;
     margin-top: 40px;
@@ -146,19 +145,6 @@ body {
     gap: 16px;
 }
 
-input {
-    border-radius: 3px;
-    padding: 8px;
-    font-size: 14px;
-    width: 250px;
-    border: 1px solid #ccc;
-}
-
-input:focus {
-    outline: none;
-    border: 1px solid #596D48;
-    box-shadow: 0 0 5px rgba(89, 109, 72, 0.5);
-}
 
 .button-login-form{
     margin-left: 50px;
@@ -202,15 +188,27 @@ legend {
     padding-top: 12px;
 }
 
-input:invalid {
-  border: 2px solid red;
+input {
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 14px;
+    width: 250px;
+    border: 1px solid #ccc;
 }
 
-input[type="password"]:valid {
-  border: 2px solid green;
+input[type="password"], input[type="confirm-pass"]:focus:invalid {
+  border-color:red;
+}
+
+input[type="password"], input[type="confirm-pass"]:valid {
+  border-color:green;
 }
 
 input:focus {
-  border: 1px solid blue;
+  border-color:blue;
   box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
