@@ -201,3 +201,16 @@ legend {
     padding: 0;
     padding-top: 12px;
 }
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input[type="password"]:valid {
+  border: 2px solid green;
+}
+
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}

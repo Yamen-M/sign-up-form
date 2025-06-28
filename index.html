@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sign-Up</title>
+    <title>sign-up page</title>
 </head>
 <body>
     <div class="imageContainer">
@@ -30,29 +30,29 @@
                                 <div class="left-form-inputs">
                                     <div>
                                         <label class="label-title" for="first_name">FIRST NAME</label><br>
-                                        <input type="text" name="first_name" id="first_name">
+                                        <input type="text" name="first_name" id="first_name" required>
                                     </div>
                                     <div>
                                         <label class="label-title" for="email">EMAIL</label><br>
-                                        <input type="email" name="email" id="email">
+                                        <input type="email" name="email" id="email" required>
                                     </div>
                                     <div>
                                         <label class="label-title" for="password">PASSWORD</label><br>
-                                        <input type="password" name="password" id="password">
+                                        <input type="password" name="password" id="password" required minlength="8">
                                     </div>
                                 </div>
                                 <div class="right-form-inputs">
                                     <div>
                                         <label class="label-title" for="last_name">LAST NAME</label><br>
-                                        <input type="text" name="last_name" id="last_name">
+                                        <input type="text" name="last_name" id="last_name" required>
                                     </div>
                                     <div>
                                         <label class="label-title" for="phone_number">PHONE NUMBER</label><br>
-                                        <input type="text" name="phone_number" id="phone_number">
+                                        <input type="text" name="phone_number" id="phone_number" required minlength="7" maxlength="7">
                                     </div>
                                     <div>
                                         <label class="label-title" for="confirm_pass">CONFIRM PASSWORD</label><br>
-                                        <input type="password" name="confirm_pass" id="confirm_pass">
+                                        <input type="password" name="confirm_pass" id="confirm_pass" required minlength="8">
                                     </div>
                                 </div>
                             </div>
