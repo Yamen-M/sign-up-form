@@ -1,6 +1,6 @@
 # sign-up-form
 
-This is a responsive and visually styled sign-up form built as part of [The Odin Project](https://www.theodinproject.com/) full-stack javascript curriculum. It demonstrates modern layout techniques, form validation, custom fonts, and responsive design principles.
+This is a sign-up form built as part of [The Odin Project](https://www.theodinproject.com/) full-stack javascript curriculum. It demonstrates modern layout techniques, form validation and custom fonts.
 
 ## Features
 
@@ -9,7 +9,6 @@ This is a responsive and visually styled sign-up form built as part of [The Odin
 - ✅ HTML5 form validation using `:valid` and `:invalid`
 - 🔐 Password confirmation feedback (with visual cues)
 - 💡 Focus effects for improved accessibility and UX
-- 🖥️ Responsive layout using Flexbox
 - 🎯 Clean and modern UI encapsulated in a bordered card
 
 ## Technologies Used
