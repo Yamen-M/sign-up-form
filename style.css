@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('fonts/Norse.otf') format('opentype');
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -18,6 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .formContainer {
@@ -27,4 +33,41 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.odinContainer{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+    padding: 10px;
+}
+
+.odin-img{
+    width: 90px;
+    height: 120px;
+}
+.odin-text{
+    font-family: 'Norse', sans-serif;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    line-height: 1;
+}
+
+.img-footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+.img-footer a {
+    color: white;
+    text-decoration: underline;
 }
