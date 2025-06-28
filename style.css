@@ -14,7 +14,7 @@ body {
     background-color: rgb(244, 252, 244);
 }
 
-.imageContainer {
+.imageContainer, .imageContainer-right {
     background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-position: center;
@@ -26,24 +26,32 @@ body {
     position: relative;
 }
 .imageContainer-right {
-    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover;
-    background-position: center;
-    width: 30vw; 
+    width: 10vw; 
+}
+
+.form-card{
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgb(244, 252, 244);
+    border: 3px solid #596D48;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: center;
+    max-height: 90vh;
+}
+.formContainer {
+    flex: 1;
+    max-width: 800px;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-
-.formContainer {
-    flex: 1;
-    width: 70%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -56,7 +64,6 @@ body {
     margin-bottom: 375px;
     padding: 10px;
 }
-
 .odin-img{
     width: 70px;
     height: 100px;
@@ -69,6 +76,7 @@ body {
     line-height: 1;
 }
 
+
 .img-footer {
     position: absolute;
     bottom: 20px;
@@ -78,34 +86,44 @@ body {
     font-size: 14px;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
 }
-
 .img-footer a {
     color: white;
     text-decoration: underline;
 }
 
+
 .formParag{
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-family: sans-serif;
     font-weight: 600;
     font-size: 18px;
     display: flex;
     flex-wrap: wrap;
     width: 625px;
-    margin-left: 50px;
+    margin-left: 25px;
     position: relative;
-    top: -30px;
+    top: 10px;
 }
 .formParag p {
     margin-top: 0;
+}
+
+.FormDiv{
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-info{
     width: 100%;
     background-color: white;
     padding: 5px 50px; 
     box-sizing: border-box;
-    box-shadow: 4px 0 8px rgba(0,0,0,0.1);
+    box-shadow: 4px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 .form-inputs{
@@ -144,16 +162,16 @@ input:focus {
 
 .button-login-form{
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: sans-serif;
     padding: 0px;
 }
 
 .submit-button{
-    padding: 10px 25px;
-    border-radius: 16px;
+    padding: 10px 35px;
+    border-radius: 8px;
     border: 0px;
-    background-color: green;
+    background-color: #596D48;
     color: white;
     font-family: sans-serif;
     font-weight: 700;
@@ -161,6 +179,12 @@ input:focus {
 .submit-button:hover {
     background-color: #4CAF50;
     cursor: pointer;
+}
+
+.button-login-form p a {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 fieldset {
