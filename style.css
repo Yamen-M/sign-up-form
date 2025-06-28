@@ -31,7 +31,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -70,4 +70,25 @@ body {
 .img-footer a {
     color: white;
     text-decoration: underline;
+}
+
+.formParag{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 625px;
+    margin-left: 50px;
+}
+
+.form-info{
+    background-color: antiquewhite;
+}
+
+.form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    padding: ;
 }
